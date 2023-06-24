@@ -13,7 +13,7 @@ const TicTacToe = () => {
             <div className="container-game">
                 <div className="board-game">
                     {initialBoard.map((item,index) => (
-                        <GameItem key={index} val={"x"}/>
+                        <GameItem key={index} val={"x"} {...item}/>
                     ))}
                 </div>
             </div>
