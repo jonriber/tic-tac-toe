@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import GameItem from "./GameItem";
 import "./game.css";
 const initialBoard = Array(9).fill(null)
 
 const TicTacToe = () => {
+    useEffect(() => {
+        console.log("update")
+    })
+
     return <>
         <main>
             <div className="container-game">
@@ -11,7 +16,9 @@ const TicTacToe = () => {
                         <GameItem key={index} val={"x"}/>
                     ))}
                 </div>
-                
+            </div>
+            <div>
+                Controller
             </div>
         </main>
     </>
